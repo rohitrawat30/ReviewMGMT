@@ -1,6 +1,9 @@
 # Dependencies
 node_modules/
 
+# Bun lock file (causes Render to use Bun instead of npm)
+bun.lock
+
 # Environment variables
 .env
 
