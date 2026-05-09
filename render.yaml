@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: ReviewMGMT
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: node dist/main
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: GROQ_API_KEY
+        sync: false
