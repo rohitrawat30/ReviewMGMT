@@ -3,7 +3,7 @@ services:
     name: ReviewMGMT
     env: node
     plan: free
-    buildCommand: npm install && npm run build
+    buildCommand: npm install --legacy-peer-deps && npm run build
     startCommand: node dist/main
     envVars:
       - key: NODE_ENV
